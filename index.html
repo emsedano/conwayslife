@@ -1,0 +1,86 @@
+<html>
+<head>
+	<title>conways life</title>
+
+	<link rel="stylesheet" type="text/css" href="css/conwayslife.css">
+
+	<script type="text/javascript" src="js/jquery.min.js"></script>
+	<script type="text/javascript" src="js/cell.js"></script>
+	<script type="text/javascript" src="js/environment.js"></script>
+	<script type="text/javascript" src="js/main.js"></script>
+</head>
+<body>
+	<div role="navigation" class="navbar navbar-inverse navbar-fixed-top">
+    <div class="container">
+      <div class="navbar-header">
+        <button data-target=".navbar-collapse" data-toggle="collapse" class="navbar-toggle collapsed" type="button">
+          <span class="sr-only">Conways life</span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+        </button>
+        <a href="#" class="navbar-brand">Conways Life</a>
+      </div>
+      <div class="collapse navbar-collapse">
+        <ul class="nav navbar-nav">
+          <li class="active"><a href="#">Home</a></li>
+          <li><a href="#about">About</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </div><!--/.nav-collapse -->
+    </div>
+  </div>
+
+  <div class="container">
+
+    <div class="starter-template">
+      <h1>Conways life game</h1>
+      <p class="lead">The Game of Life is not your typical computer game. It is a 'cellular automaton', and was invented by Cambridge mathematician John Conway.</p>
+
+      <h2>The Rules</h2>
+
+			<h3>For a space that is 'populated':</h3>
+			<ol>
+		    <li>Each cell with one or no neighbors dies, as if by loneliness. </li>
+		    <li>Each cell with four or more neighbors dies, as if by overpopulation. </li>
+		    <li>Each cell with two or three neighbors survives. </li>
+		  </ol>
+
+			<h3>For a space that is 'empty' or 'unpopulated'</h3>
+	    <ol>
+	    	<li>Each cell with three neighbors becomes populated.</li>
+	    </ol>
+
+      <table id="environment" border="1"></table>
+
+			<hr>
+			<div class="actions row">
+				<button onclick="ConwaysLifeGame.setUp()" class="btn btn-default btn-small">1. Set up Environment</button>
+				<button onclick="ConwaysLifeGame.start()" class="btn btn-success btn-small"><span class="glyphicon glyphicon-play"></span>  Iniciar </button>
+
+        <button onclick="ConwaysLifeGame.pause()" class="btn btn-info btn-small"><span class="glyphicon glyphicon-pause"></span> Pausa</button>
+        </div>
+
+      </div>
+			</div>
+    </div>
+
+  </div>
+
+  <div class="footer">
+    <div class="container">
+      <p class="text-muted">Elias Martinez.</p>
+    </div>
+  </div>
+
+
+		<!-- Latest compiled and minified CSS -->
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css">
+
+	<!-- Optional theme -->
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap-theme.min.css">
+
+	<!-- Latest compiled and minified JavaScript -->
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
+</body>
+</html>
