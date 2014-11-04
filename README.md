@@ -15,4 +15,7 @@ For a space that is 'populated':
 For a space that is 'empty' or 'unpopulated'
 
     Each cell with three neighbors becomes populated.
+    
+Whatch live [Demo](http://jsfiddle.net/emsedano/4835jcnm/ "Live demo")
+
 
