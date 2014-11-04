@@ -17,7 +17,7 @@
 			if (ConwaysLifeGame.daysGoBy === null)
 				ConwaysLifeGame.daysGoBy = setInterval(function(){
 					ConwaysLifeGame.executeLifeCicle();
-				}, 600);
+				}, 500);
 		},
 
 		pause: function(){
