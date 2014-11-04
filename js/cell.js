@@ -3,6 +3,10 @@
 function Cell(x, y, populated){
 	this.px = x;
 	this.py = y;
+	this.isGoner = false;
+	this.isPregned = false;
+
+
 	if(populated)
 		this.populated = populated;
 	else
@@ -17,22 +21,20 @@ Cell.prototype.isPopulated = function(){
 	return this.populated;
 };
 
+Cell.prototype.willDie = function(){
+	this.isGoner = true;
+	this.isPregned = false;
+};
 
-Can a freelancer place a bid outside the budget limits set by an employer?
+Cell.prototype.resetState = function(){
+	this.isGoner = false;
+	this.isPregned = false;
+};
 
-Can a freelancer retake a paid exam?
+Cell.prototype.fertilize = function(){
+	this.isGoner = false;
+	this.isPregned = true;
+};
 
-What is the minimum amount that you can withdraw via Freelancer Debit Card?
 
-What can be done if an Employer does not provide a needed file for the project?
-
-Can a Freelancer change his username?
-
-What is the minimum number of reviews required for a freelancer to withdraw money by Express Withdrawal?
-
-Freelancers who take an exam are more likely to be awarded by:
-
-How should communications, information and file exchanges performed?
-
-How many XP Bonus for connecting with Facebook ?
 
