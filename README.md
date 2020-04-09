@@ -19,7 +19,7 @@ For a space that is 'empty' or 'unpopulated'
 Whatch live [Demo](http://jsfiddle.net/emsedano/4835jcnm/7/ "Live demo")
                    
 
- ```
+ ```js
 //====================== Cell object ================================
 
 function Cell(x, y, populated) {
